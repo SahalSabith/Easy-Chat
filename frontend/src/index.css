@@ -1,0 +1,22 @@
+/* App.css */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  /* Light theme background - change to dark color for dark theme */
+  background-color: #f5f7fa; /* Change to #121212 for dark theme */
+  color: #333; /* Change to #e0e0e0 for dark theme */
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+}

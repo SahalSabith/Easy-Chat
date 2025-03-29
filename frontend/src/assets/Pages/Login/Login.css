@@ -1,0 +1,172 @@
+/* AuthPages.css */
+.auth-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 72px); /* Adjust based on your header height */
+    padding: 40px 20px;
+    background-color: #f5f7fa; /* Change to #121212 for dark theme */
+  }
+  
+  .auth-card {
+    max-width: 480px;
+    width: 100%;
+    background-color: #ffffff; /* Change to #252525 for dark theme */
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08); /* Change to rgba(0, 0, 0, 0.3) for dark theme */
+    padding: 40px;
+  }
+  
+  .auth-header {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .auth-header h2 {
+    font-size: 28px;
+    font-weight: 700;
+    color: #333; /* Change to #e0e0e0 for dark theme */
+    margin-bottom: 8px;
+  }
+  
+  .auth-header p {
+    font-size: 16px;
+    color: #666; /* Change to #aaa for dark theme */
+  }
+  
+  .auth-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+  
+  .form-group label {
+    font-size: 14px;
+    font-weight: 500;
+    color: #555; /* Change to #bbb for dark theme */
+  }
+  
+  .form-group input {
+    padding: 12px 16px;
+    border: 1px solid #ddd; /* Change to #444 for dark theme */
+    border-radius: 6px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+    background-color: #fff; /* Change to #1e1e1e for dark theme */
+    color: #333; /* Change to #e0e0e0 for dark theme */
+  }
+  
+  .form-group input:focus {
+    border-color: #4a6cff; /* Change to #738aff for dark theme */
+    outline: none;
+  }
+  
+  .form-group input::placeholder {
+    color: #aaa; /* Change to #666 for dark theme */
+  }
+  
+  .error-message {
+    color: #e74c3c; /* A red color that works in both light and dark themes */
+    font-size: 12px;
+    margin-top: 4px;
+  }
+  
+  .form-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .remember-forgot {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .remember-me {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+  
+  .remember-me label, .terms-conditions label {
+    font-size: 14px;
+    color: #555; /* Change to #bbb for dark theme */
+  }
+  
+  .forgot-password {
+    font-size: 14px;
+    color: #4a6cff; /* Change to #738aff for dark theme */
+    transition: color 0.3s;
+  }
+  
+  .forgot-password:hover {
+    color: #3a59e6; /* Change to #5c70cc for dark theme */
+    text-decoration: underline;
+  }
+  
+  .terms-conditions {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+  }
+  
+  .terms-conditions input {
+    margin-top: 3px;
+  }
+  
+  .auth-button {
+    background-color: #4a6cff; /* Change to #738aff for dark theme */
+    color: white;
+    border: none;
+    padding: 14px;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 10px;
+  }
+  
+  .auth-button:hover {
+    background-color: #3a59e6; /* Change to #5c70cc for dark theme */
+  }
+  
+  .auth-alternate {
+    text-align: center;
+    margin-top: 24px;
+    font-size: 14px;
+    color: #555; /* Change to #bbb for dark theme */
+  }
+  
+  .auth-link {
+    color: #4a6cff; /* Change to #738aff for dark theme */
+    font-weight: 500;
+    transition: color 0.3s;
+  }
+  
+  .auth-link:hover {
+    color: #3a59e6; /* Change to #5c70cc for dark theme */
+    text-decoration: underline;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 550px) {
+    .auth-card {
+      padding: 30px 20px;
+    }
+    
+    .remember-forgot {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 10px;
+    }
+  }
