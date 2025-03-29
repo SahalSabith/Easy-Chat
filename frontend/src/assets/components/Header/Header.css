@@ -1,0 +1,249 @@
+/* Header.css */
+.header {
+  background-color: #ffffff; /* Change to #1e1e1e for dark theme */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Change to rgba(0, 0, 0, 0.4) for dark theme */
+  padding: 15px 0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.headerDark {
+  background-color: #1e1e1e;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+  padding: 15px 0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.header-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: 700;
+  color: #4a6cff; /* Change to #738aff for dark theme */
+}
+
+.logoDark {
+  font-size: 24px;
+  font-weight: 700;
+  color: #738aff;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-link {
+  font-size: 16px;
+  color: #555; /* Change to #bbb for dark theme */
+  transition: color 0.3s;
+}
+
+.nav-linkDark {
+  font-size: 16px;
+  color: #bbb;
+  transition: color 0.3s;
+}
+
+.nav-link:hover {
+  color: #4a6cff; /* Change to #738aff for dark theme */
+}
+
+.nav-linkDark:hover {
+  color: #738aff;
+}
+
+.header-actions {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.host-button {
+  background-color: #4a6cff; /* Change to #738aff for dark theme */
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 6px;
+  font-weight: 600;
+  transition: background-color 0.3s;
+}
+
+.host-buttonDark {
+  background-color: #738aff;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 6px;
+  font-weight: 600;
+  transition: background-color 0.3s;
+}
+
+.host-button:hover {
+  background-color: #3a59e6; /* Change to #5c70cc for dark theme */
+}
+
+.host-buttonDark:hover {
+  background-color: #5c70cc;
+}
+
+.login-button {
+  background-color: transparent;
+  color: #4a6cff; /* Change to #738aff for dark theme */
+  border: 1px solid #4a6cff; /* Change to #738aff for dark theme */
+  padding: 10px 16px;
+  border-radius: 6px;
+  font-weight: 600;
+  transition: all 0.3s;
+}
+
+.login-buttonDark {
+  background-color: transparent;
+  color: #738aff; /* Change to #738aff for dark theme */
+  border: 1px solid #738aff; /* Change to #738aff for dark theme */
+  padding: 10px 16px;
+  border-radius: 6px;
+  font-weight: 600;
+  transition: all 0.3s;
+}
+
+.login-button:hover {
+  background-color: rgba(74, 108, 255, 0.1); /* Change to rgba(115, 138, 255, 0.2) for dark theme */
+}
+
+.login-buttonDark:hover {
+  background-color: rgba(115, 138, 255, 0.2)
+}
+
+.profile-button{
+  background-color: transparent;
+  color: #4a6cff; /* Change to #738aff for dark theme */
+  border: 1px solid #4a6cff; /* Change to #738aff for dark theme */
+  padding: 10px 16px;
+  border-radius: 6px;
+  font-weight: 600;
+  transition: all 0.3s;
+}
+
+.profile-button:hover {
+  background-color: rgba(74, 108, 255, 0.1); /* Change to rgba(115, 138, 255, 0.2) for dark theme */
+}
+
+.register-button{
+  background-color: transparent;
+  color: #4a6cff; /* Change to #738aff for dark theme */
+  border: 1px solid #4a6cff; /* Change to #738aff for dark theme */
+  padding: 10px 16px;
+  border-radius: 6px;
+  font-weight: 600;
+  transition: all 0.3s;
+}
+
+.register-button:hover {
+  background-color: rgba(74, 108, 255, 0.1); /* Change to rgba(115, 138, 255, 0.2) for dark theme */
+}
+
+/* New theme toggle button styles */
+.theme-toggle-button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s;
+}
+
+.theme-toggle-button:hover {
+  background-color: rgba(0, 0, 0, 0.05); /* Change to rgba(255, 255, 255, 0.1) for dark theme */
+}
+
+.theme-icon {
+  font-size: 20px;
+  line-height: 1;
+}
+
+.sun-icon {
+  color: #f39c12;
+}
+
+.moon-icon {
+  color: #f1c40f;
+}
+
+/* Dark theme styles */
+.profile-buttonDark {
+  background-color: transparent;
+  color: #738aff;
+  border: 1px solid #738aff;
+  padding: 10px 16px;
+  border-radius: 6px;
+  font-weight: 600;
+  transition: all 0.3s;
+}
+
+.profile-buttonDark:hover {
+  background-color: rgba(115, 138, 255, 0.2);
+}
+
+.register-buttonDark {
+  background-color: transparent;
+  color: #738aff;
+  border: 1px solid #738aff;
+  padding: 10px 16px;
+  border-radius: 6px;
+  font-weight: 600;
+  transition: all 0.3s;
+}
+
+.register-buttonDark:hover {
+  background-color: rgba(115, 138, 255, 0.2);
+}
+
+.theme-toggle-buttonDark {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s;
+}
+
+.theme-toggle-buttonDark:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.theme-iconDark {
+  font-size: 20px;
+  line-height: 1;
+}
+
+.sun-iconDark {
+  color: #f1c40f;
+}
+
+.moon-iconDark {
+  color: #f39c12;
+}
