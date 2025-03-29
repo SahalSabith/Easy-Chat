@@ -48,10 +48,6 @@ class LoginView(APIView):
             "refresh": str(refresh),
             "access": str(refresh.access_token)
         }, status=status.HTTP_200_OK)
-    
-
-
-
 
 class CreateRoomView(APIView):
     authentication_classes = [JWTAuthentication]
@@ -66,9 +62,6 @@ class CreateRoomView(APIView):
                 "room": RoomSerializer(room).data
             }, status=status.HTTP_201_CREATED)
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
-
-
-
 
 
 class ListRoomsView(APIView):

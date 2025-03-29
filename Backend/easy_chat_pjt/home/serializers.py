@@ -21,9 +21,6 @@ class UserSerializer(serializers.ModelSerializer):
         )
         return user
 
-
-
-
 class RoomSerializer(serializers.ModelSerializer):
     class Meta:
         model = Room

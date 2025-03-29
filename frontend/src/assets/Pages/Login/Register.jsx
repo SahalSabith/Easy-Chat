@@ -2,10 +2,12 @@ import React, { useState,useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { useSelector, useDispatch } from 'react-redux';
 import { register,reset } from '../../Redux/authSlice';
+import { useNavigate } from 'react-router-dom';
 import './Login.css';
 
 const Register = () => {
   const dispatch = useDispatch();
+  const navigate = useNavigate()
   const { user, isLoading, isError, isSuccess, message } = useSelector(
     (state) => state.auth
   );
@@ -74,6 +76,7 @@ const Register = () => {
     if (validateForm()) {
       console.log('Registration submitted:', formData);
       dispatch(register(formData));
+      navigate('/login')
     }
   };
 
